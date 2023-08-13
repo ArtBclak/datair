@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -181,7 +182,7 @@ template {
 
 html {
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-size: 62.5%;
+  font-size: 60%;
   color: aliceblue;
 }
 
@@ -192,7 +193,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: rgb(5, 27, 24);
+  background: rgb(30, 30, 30);
 }
 
 section {
@@ -208,9 +209,21 @@ section {
   width: 95%;
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 480px) {
   html {
-    font-size: 60%;
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 768px) {
+  /* Ваши стили для планшетов */
+  html {
+    font-size: 65%;
+  }
+}
+@media (min-width: 1025px) {
+  /* Ваши стили для небольших ноутбуков и десктопов */
+  html {
+    font-size: 70%;
   }
   .container {
     width: 90%;
@@ -228,36 +241,21 @@ section {
     outline: 0.1rem solid rgb(0, 33, 77);
   }
 }
+@media (min-width: 1367px) {
+  html {
+    font-size: 67.5%;
+  }
+}
 @media screen and (min-width: 1500px) {
   html {
-    font-size: 65%;
+    font-size: 70%;
   }
   .container {
-    width: 80%;
+    width: 120rem;
   }
 }
 @media screen and (min-width: 2000px) {
   html {
-    font-size: 80%;
-  }
-}
-@media screen and (min-width: 2500px) {
-  html {
-    font-size: 105%;
-  }
-}
-@media screen and (min-width: 3000px) {
-  html {
-    font-size: 130%;
-  }
-}
-@media screen and (min-width: 3500px) {
-  html {
-    font-size: 155%;
-  }
-}
-@media screen and (min-width: 4000px) {
-  html {
-    font-size: 180%;
+    font-size: 75%;
   }
 }/*# sourceMappingURL=styles.css.map */
